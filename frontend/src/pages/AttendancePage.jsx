@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const EMP_API = "http://localhost:5000/api/employees";
-const ATT_API = "http://localhost:5000/api/attendance";
+const EMP_API = "https://hrms-lite-mwb5.onrender.com/api/employees";
+const ATT_API = "https://hrms-lite-mwb5.onrender.com/api/attendance";
+
 
 export default function AttendancePage() {
   const [employees, setEmployees] = useState([]);
@@ -141,3 +142,4 @@ export default function AttendancePage() {
     </div>
   );
 }
+
